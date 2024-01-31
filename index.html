@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title class="red">Prep50 Exam Preparation Tool</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: #131e29;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff; /* Set a background color for sections */
+      }
+
+      .emphasize {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .submit-button {
+        width: 12rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .red {
+        color: #ff6347;
+      }
+
+      .clean-list {
+        list-style-type: none;
+      }
+
+      span {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+      }
+
+      h2,
+      h3 {
+        font-family: "Raleway";
+        color: #131e29;
+      }
+
+      h1 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        padding: 1rem 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        padding: 0.875rem 0;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      .call-to-action {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .call-to-action-left {
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      button {
+        background-color: #ff6347;
+        color: #fafafa;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+      }
+      .form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
+      }
+
+      label {
+        display: block;
+        padding: 0.5rem 0;
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        background-color: #131e29;
+        color: #fafafa;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header a {
+        text-decoration: none;
+        font-size: x-large;
+        color: #fafafa;
+        margin-right: 20px;
+        text-transform: capitalize;
+      }
+
+      .order-button {
+        background-color: #ff6347;
+        color: #fafafa;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: #131e29;
+        color: #fafafa;
+        text-align: center;
+        padding: 3rem;
+        margin: 0;
+      }
+      .align-right {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      select {
+        appearance: none;
+        background: transparent
+          url("https://img.icons8.com/android/24/000000/down.png") no-repeat
+          right center;
+        background-size: 12px;
+        background-position-x: 95%;
+      }
+
+      button {
+        background-color: #ff6347;
+        color: #fafafa;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      .form div {
+        margin-top: 10px;
+      }
+      @media (max-width: 600px) {
+        .form {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div>
+          <a class="red" href="#">
+            Smash your JAMB with Prep50 Past Questions
+          </a>
+        </div>
+        <div>
+          <a href="./products.html">Products</a>
+          <button
+            class="order-button"
+            onclick="window.location.href='./order.html'"
+          >
+            Order Now
+          </button>
+        </div>
+      </header>
+    </nav>
+    <section class="emphasize">
+      <h1>
+        Award Winning Maltina Teacher of the year, reveals secret to A1 in WAEC
+        and 350 in JAMB
+        <span class="red">(irrespective of the sitting arrangement)</span>
+      </h1>
+    </section>
+
+    <section>
+      <p>
+        Many students have labored to make A’s in their WAEC and JAMB exams but
+        what if I can prove to you that the way they prepare for their exams
+        already guarantees that they will fail, no matter how hard they try.
+      </p>
+      <p>
+        Your son or daughter may currently be studying botany or zoology or
+        biological Science ( I don’t even know what that means), although they
+        wanted to study medicine, Engineering and /or law... What if there is
+        way for him or her to be guaranteed of enough JAMB and Post UTME score
+        that will enable them get admitted into any university of their choice
+        to study medicine or any course of their choice.
+      </p>
+      <p>
+        Such guarantee is hidden in the preparation tools used by the Award
+        Winning Maltina teacher of the year....Her approach to exam preparations
+        has yielded hundreds of successful results and counting for many
+        families and your child can be one of the success stories if you permit.
+      </p>
+      <p>
+        I actually mean guaranteed result of ‘320’ and above in JAMB on your
+        first sitting and ‘A’s’ in your WAEC single sitting too, without losing
+        one year or sorting anybody but a guaranteed 320 in Jamb on your first
+        sitting.
+      </p>
+      <p>
+        Do u think it's impossible? Well let me bust your bubble... It is easy
+        with the right tools and that is why I am introducing you to this
+        age-old solution which thousands have used to get high scores in Jamb
+        and all A’s in WAEC.
+      </p>
+    </section>
+
+    <section class="emphasize">
+      <h2>The Science Behind <a href="" class="red">Prep50</a></h2>
+      <p>
+        Well this is not totally a secret. If you have ever picked up a textbook
+        to read before, you will notice how each one is arranged in chapters
+        with topics and subtopics. That is because, this is the scientifically
+        proven way, human beings learn and assimilate info.
+      </p>
+      <p>
+        It is unfortunate that during WAEC and JAMB preparations, teachers cram
+        up everything and students use tools that end up making them more
+        confused instead of making their preparations seamless.
+      </p>
+      <p>
+        Those who first introduced the tools we use for exam preparations did
+        not put these psychologies of learning in mind as they developed their
+        work.
+      </p>
+    </section>
+
+    <section class="emphasize">
+      <h2>The Benefits of <a href="" class="red">Prep50</a></h2>
+      <p>
+        We have labelled our own exam preparation tool “<a href="" class="red"
+          >Prep50</a
+        >”. Using this tool, your child will effectively “learn how to learn”.
+        This is very important. It is one of the most vital skills any student
+        must have to succeed as a student.
+      </p>
+      <p>
+        Your child will learn how to organize his/her academic tasks in a way
+        that will ensure that learning is always taking place and in a way that
+        you can also measure what they have learnt.
+      </p>
+      <p>
+        Secondly, your child will develop the ability to think like an
+        examiner/teacher. This is a huge skill too for every student so long as
+        your studies warrant that you will write an exam. By painstakingly going
+        through the “<a href="" class="red">Prep50</a>” series, subject by
+        subject, topic by topic, and sub-topic after sub-topic, the scales will
+        fall off from your eyes and like it happened to Adam and Eve, you will
+        know the world and you will begin to see how examiners create, craft and
+        structure questions just to test your understanding.
+      </p>
+      <p>
+        The beauty of this skill for your child is that every new textbook your
+        child picks to read, he/she will be able to predict likely questions
+        that can come from the topic. This prediction capacity will make your
+        child not to fail any exam again in their lifetime unless they did not
+        prepare for it. If your child can think like the teacher, they will know
+        the part of the textbook that any good teacher will set questions from
+        and focus more on those areas. (Top Secret)
+      </p>
+      <p>
+        <a href="" class="red">Prep50</a> promises you an easy way to learn.
+        This will help your child to cover more topics than usual in a day and
+        most importantly cover the entire syllabus before the exam. So they are
+        very familiar with all questions from all the topics before the exam and
+        consequently can attempt all questions.
+      </p>
+      <p>
+        <a href="" class="red">Prep50</a> helps you to be disciplined and avoid
+        procrastination. Many schools usually start the exam preparations for
+        the students only when they are already in SS3. This is very wrong as we
+        learned from the award winning teacher. According to her, WAEC
+        preparation starts in SS1 because the syllabus covers from SS1 to SS3.
+      </p>
+      <p>
+        Hence exposing the child to WAEC standard from the onset, gives him/her
+        more advantage over those who started their preparations in SS3. We have
+        structured our preparation tool to reflect every one of her advice to
+        help your child start early on the journey to success.
+      </p>
+      <p>
+        Finally, something spiritual happens that improves your Retentive Memory
+        when studying with <a href="" class="red">Prep50</a>. Using the
+        <a href="" class="red">Prep50</a> structured learning approach, will
+        help you to create neural networks in your brain. If you listen to radio
+        programs, sometime you begin to complain why the same callers call-in
+        everyday to share their opinion while hundreds of others find it hard to
+        call into the program even for once in a year. The secret is neural
+        networks.
+      </p>
+      <p>
+        When you do something every day, you create a pathway in your mind for
+        easy recall. By using <a href="" class="red">Prep50</a> to study, your
+        child will naturally create that neural networks between the subjects
+        and his/her mind to enable for easy recall on the day of exam.
+      </p>
+    </section>
+
+    <section class="emphasize">
+      <h2>The Secret Tool</h2>
+      <p>
+        Having learnt all these secrets from the award winning, Maltina Teacher
+        of the year, we wanted to find a way to share this knowledge with every
+        parent, every school and every student. We are also aware that everybody
+        does not have access to this type of teacher in their respective
+        schools... So we worked earnestly to put together the solution in a
+        series of books which we have labelled the
+        <a href="" class="red">Prep50</a> series (Hard copy). We have the past
+        question series in WAEC and JAMB but they are structured differently to
+        ensure your child reaps all the benefits we have mentioned above and
+        gain admission to study any course of their choice without bribing
+        anybody.
+      </p>
+    </section>
+    <section id="preps50-series">
+      <ul class="emphasize">
+        <li class="clean-list">
+          <h3>Jamb Series:</h3>
+          <ul>
+            <li>
+              Science Bundle: English Language, Mathematics or Biology,
+              Chemistry, Physics
+            </li>
+            <li>
+              Arts Bundle: English Language, Mathematics/Government/Economics,
+              Literature WAEC & JAMB combined, C.R.S
+            </li>
+            <li>
+              Commercial Bundle: English Language, Mathematics, Economics,
+              Government
+            </li>
+          </ul>
+        </li>
+        <li class="clean-list">
+          <section>
+            <div class="call-to-action-left">
+              <button>Buy JAMB Bundle</button>
+            </div>
+          </section>
+        </li>
+        <li class="clean-list">
+          <h3>Waec Series:</h3>
+          <ul>
+            <li>
+              Science Bundle: English Language, Mathematics, Chemistry, Biology,
+              Physics, Civic and Trade Subjects
+            </li>
+            <li>
+              Arts Bundle: English Language, Mathematics, Literature WAEC & JAMB
+              combined, C.R.S, Economics, Government, Civic and Trade Subjects
+            </li>
+            <li>
+              Commercial Bundle: English Language, Mathematics, Commerce, Fin.
+              accounting, Economics, Government, Civic and Trade Subjects
+            </li>
+          </ul>
+        </li>
+        <li class="clean-list">
+          <section>
+            <div class="call-to-action-left">
+              <button>Buy WAEC Bundle</button>
+            </div>
+          </section>
+        </li>
+      </ul>
+      <p>
+        Order now to get FREE WhatsApp support and one month FREE access to our
+        <a href="" class="red">Prep50</a> Online tutorials worth 40,000 and
+        above.
+      </p>
+      <p>
+        How and what tools, the students make use of during their exam
+        preparations matter a lot. Don't you think, this is the major reason why
+        smart kids often fail JAMB or do not credit all their paper in WAEC.
+        Take this opportunity today and order this
+        <a href="" class="red">Prep50</a> series. The truth is, tomorrow you may
+        not see this website again and this book is not yet in the market and
+        there is none available that is organized with this secret method from
+        the award winning teacher in mind.
+      </p>
+      <p>
+        If you wait till tomorrow, we may run out of stock and printing more
+        books takes weeks. That's why you have to get this revolutionary tool
+        now!
+      </p>
+    </section>
+
+    <section class="emphasize">
+      <h2>Pricing and Discounts</h2>
+      <p>
+        Normally, this offer should cost 150k and even at that 150k, it is still
+        very cheap because people spend up to 500k to gain admission into
+        medicine and law etc and the most unfortunate thing is that 80% of them
+        lose their money that way and their student end up studying fishery or
+        Plant science in school. But we will not charge you 150k because our
+        main aim is not to make money but to help your child gain admission
+        without bribe or sorting. We understand the condition of the country and
+        for that the JAMB bundle is not even ₦20,000 or ₦15,000 but just a token
+        of ₦10,000 and WAEC bundle is ₦15,000
+      </p>
+      <p>
+        If your child is still SS3 class and you decide to buy both bundles, we
+        will give you a huge ₦2,500 naira discount... So instead of ₦25,000 you
+        only pay ₦22,500...
+      </p>
+      <p>
+        listen and think about it. This is not even up to what we spend on Dstv
+        subscription in a term... And what do u get in return? News about death,
+        destruction etc. but when u get this tool, you set your child up for
+        life because if,... No not If…. for when your child scores 350 in Jamb
+        and gets admitted into the University to study medicine or law or
+        whatever course he/she loves, without your spending any dime or bribing
+        anybody, you would have saved yourself millions.
+      </p>
+      <p>
+        When he graduates, he can take care of him/herself and you too. Don't
+        you want that for your child? I know you do. So that's why you need to
+        click this button now, place your order, make payment and we will
+        deliver to you.
+      </p>
+      <p>
+        Well time is ticking on this offer, imagine how horrible you will feel
+        leaving this page and not getting this tool for your child and he ends
+        up scoring 201 in Jamb. You will blame the Government, the CBT center,
+        the computer and everyone but the real person to blame is you. Because
+        you brought this unto your child with the decision you make now to leave
+        without ordering. Your child may get another one year to stay at home or
+        make you spend hundreds of thousands to bribe admission officials
+        unending for a problem 10k should have solved. So place your order now
+        and pay for your order to be arranged and sent to you within 24 to
+        48hrs.
+      </p>
+    </section>
+    <section>
+      <div class="call-to-action">
+        <button>Order Prep50 Now</button>
+      </div>
+    </section>
+
+    <section>
+      <p>
+        When you place an order for hardcopy on any of the bundle, and your
+        subject combinations are a bit different, please give us a call on
+        Phone: 09038356928 to confirm the subjects you need within the bundle.
+      </p>
+      <p>
+        Once your order is confirmed and the subjects properly selected we will
+        send out your order for delivery.
+      </p>
+      <p>Phone: 09038356928</p>
+    </section>
+    <section>
+      <h2>Order <a href="" class="red">Prep50 </a>Now!</h2>
+      <form>
+        <div class="form">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+          <label for="state">State:</label>
+          <select id="state" name="state" required>
+            <option value="" disabled selected>Select State</option>
+            <option value="Abia">Abia</option>
+            <option value="Adamawa">Adamawa</option>
+            <option value="Akwa Ibom">Akwa Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Borno">Borno</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
+            <option value="Ebonyi">Ebonyi</option>
+            <option value="Edo">Edo</option>
+            <option value="Ekiti">Ekiti</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Gombe">Gombe</option>
+            <option value="Imo">Imo</option>
+            <option value="Jigawa">Jigawa</option>
+            <option value="Kaduna">Kaduna</option>
+            <option value="Kano">Kano</option>
+            <option value="Katsina">Katsina</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kogi">Kogi</option>
+            <option value="Kwara">Kwara</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Nasarawa">Nasarawa</option>
+            <option value="Niger">Niger</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Ondo">Ondo</option>
+            <option value="Osun">Osun</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Plateau">Plateau</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Yobe">Yobe</option>
+            <option value="Zamfara">Zamfara</option>
+          </select>
+          <label for="copies">Available Copies:</label>
+          <select id="copies" name="copies" required>
+            <option value="" disabled selected>Select Copies</option>
+            <option value="Jamb Science Bundle ₦10,000 (4 Books)">
+              Jamb Science Bundle ₦10,000 (4 Books)
+            </option>
+            <option value="Jamb Art Bundle ₦10,000 (4 Books)">
+              Jamb Art Bundle ₦10,000 (4 Books)
+            </option>
+            <option value="Jamb Commercial Bundle ₦10,000 (4 Books)">
+              Jamb Commercial Bundle ₦10,000 (4 Books)
+            </option>
+            <option value="Waec Science Bundle ₦15,000 (7 Books)">
+              Waec Science Bundle ₦15,000 (7 Books)
+            </option>
+            <option value="Waec Art Bundle ₦15,000 (7 Books)">
+              Waec Art Bundle ₦15,000 (7 Books)
+            </option>
+            <option value="Waec Commercial Bundle ₦15,000 (7 Books)">
+              Waec Commercial Bundle ₦15,000 (7 Books)
+            </option>
+            <option value="Both Jamb & Waec Science Bundle ₦22,500 (11 Books)">
+              Both Jamb & Waec Science Bundle ₦22,500 (11 Books)
+            </option>
+            <option value="Both Jamb & Waec Art Bundle ₦22,500 (10 Books)">
+              Both Jamb & Waec Art Bundle ₦22,500 (10 Books)
+            </option>
+            <option
+              value="Both Jamb & Waec Commercial Bundle ₦22,500 (11 Books)"
+            >
+              Both Jamb & Waec Commercial Bundle ₦22,500 (11 Books)
+            </option>
+          </select>
+
+          <div>
+            <p>Any additional book to the bundle will cost ₦1,500 per book</p>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p>
+        © 2024 Copyright Prep50Books. Powered by Daecons Educational consult
+        &amp; Data center and Deacons Digital Solutions ltd.
+      </p>
+    </footer>
+  </body>
+</html>
