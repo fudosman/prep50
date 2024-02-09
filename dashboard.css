@@ -8,84 +8,25 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px;
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
   background-color: #fff;
-  /* Set a background color for sections */
-}
-
-.emphasize {
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.submit-button {
-  width: 12rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.red {
-  color: #ff6347;
-}
-
-.clean-list {
-  list-style-type: none;
-}
-
-span {
-  font-size: 1.5rem;
-  padding: 0.5rem 0;
-}
-
-h2,
-h3 {
-  font-family: "Raleway";
-  color: #131e29;
-}
-
-h1 {
-  font-size: 2rem;
-  text-transform: capitalize;
-  padding: 1rem 0;
-}
-
-h2 {
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
-h3 {
-  font-size: 1.75rem;
-  padding: 0.875rem 0;
-}
-
-p {
-  font-size: 1rem;
-  padding: 0.5rem 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.call-to-action {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.call-to-action-left {
-  text-align: left;
-  margin-top: 20px;
-}
-
+.submit-button,
 button {
+  width: 100%;
+  max-width: 200px;
   background-color: #ff6347;
   color: #fafafa;
-  padding: 1rem 1.5rem;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 table {

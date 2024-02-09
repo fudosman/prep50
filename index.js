@@ -1,3 +1,15 @@
+function showErrorToast(message) {
+  const errorToast = document.createElement('div');
+  errorToast.classList.add('error-toast');
+  errorToast.textContent = message;
+  document.body.appendChild(errorToast);
+  setTimeout(() => {
+    errorToast.remove();
+  }, 1500);
+}
+
+
+
 document.getElementById('myForm').addEventListener('submit', async function (event) {
   event.preventDefault();
 
