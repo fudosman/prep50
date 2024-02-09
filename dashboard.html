@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Dashboard</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>Ordered Product</th>
+            <th>Processing</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody id="orderTableBody">
+          <!-- Orders will be dynamically inserted here -->
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="currentPage">Page 1</span>
+        <button id="nextPage">Next</button>
+      </div>
+    </div>
+  </body>
+</html>

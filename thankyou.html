@@ -82,6 +82,14 @@
         cursor: pointer;
       }
 
+      button {
+        background-color: #ff6347;
+        color: #fafafa;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
       /* Media Query for Tablets and Smaller Phones */
       @media (max-width: 768px) {
         .thank-you-section {
@@ -104,7 +112,7 @@
     <nav>
       <header>
         <div>
-          <a class="red" href="#">
+          <a class="red" href="./index.html">
             Smash your JAMB with Prep50 Past Questions
           </a>
         </div>
@@ -112,7 +120,7 @@
           <a href="./products.html">Products</a>
           <button
             class="order-button"
-            onclick="window.location.href='./order.html'"
+            onclick="window.location.href=`https://prep50.ng/`"
           >
             Take a Practice Exam
           </button>
@@ -120,15 +128,18 @@
       </header>
     </nav>
     <div class="thank-you-section">
-      <h1>Thanks a Million for Trusting Us with Your Order!</h1>
+      <h1>Thanks a Million for Trusting Us With Your Order!</h1>
       <p>
         We're thrilled to have you onboard. Your order means the world to us. As
         a token of our appreciation, we invite you to explore an exclusive
         offer:
       </p>
-      <a href="https://example.com/upsell" class="upsell-link">
+      <button
+        class="order-button"
+        onclick="window.location.href=`https://prep50.ng/`"
+      >
         Explore Exclusive Offer
-      </a>
+      </button>
     </div>
   </body>
 </html>

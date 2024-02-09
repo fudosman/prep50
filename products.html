@@ -26,6 +26,27 @@
         text-align: center;
       }
 
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff; /* Set a background color for sections */
+      }
+
+      .emphasize {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .submit-button {
+        width: 12rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .red {
+        color: #ff6347;
+      }
+
       header {
         background-color: #131e29;
         color: #fafafa;
@@ -108,6 +129,15 @@
         cursor: pointer;
       }
 
+      button {
+        background-color: #ff6347;
+        color: #fafafa;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
       /* Media Queries */
       @media only screen and (min-width: 900px) {
         .book {
@@ -138,15 +168,15 @@
     <nav>
       <header>
         <div>
-          <a class="red" href="#">
+          <a class="red" href="./index.html">
             Smash your JAMB with Prep50 Past Questions
           </a>
         </div>
         <div>
           <a href="./products.html">Products</a>
           <button
-            class="order-button"
-            onclick="window.location.href='./order.html'"
+            class="book-button"
+            onclick="window.location.href=`https://prep50.ng/`"
           >
             Take a Practice Exam
           </button>
@@ -162,41 +192,71 @@
           <img src="./Resources/account.jpeg" alt="Accounting Book" />
           <h3>Accounting Book</h3>
           <p>Price: ₦1000</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
         <div class="book">
           <img src="./Resources/agric.jpeg" alt="Agriculture Book" />
           <h3>Agriculture Book</h3>
           <p>Price: ₦1000</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/biology.jpeg" alt="Biology Book" />
           <h3>Biology Book</h3>
           <p>Price: ₦1200</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/chem.jpeg" alt="Chemistry Book" />
           <h3>Chemistry Book</h3>
           <p>Price: ₦800</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/civic.jpeg" alt="Civic Education Book" />
           <h3>Civic Education Book</h3>
           <p>Price: ₦800</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/commerce.jpeg" alt="Commerce Book" />
           <h3>Commerce Book</h3>
           <p>Price: ₦800</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <!-- Add more books as needed -->
@@ -205,63 +265,108 @@
           <img src="./Resources/crk.jpeg" alt="CRK Book" />
           <h3>CRK Book</h3>
           <p>Price: ₦900</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/english.jpeg" alt="English Book" />
           <h3>English Book</h3>
           <p>Price: ₦1100</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/ecoo.jpeg" alt="Economics Book" />
           <h3>Economics Book</h3>
           <p>Price: ₦1100</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/Fur_math.jpeg" alt="Further Maths Book" />
           <h3>Further Maths Book</h3>
           <p>Price: ₦1100</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/geography.jpeg" alt="Geography Book" />
           <h3>Geography Book</h3>
           <p>Price: ₦950</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/government.jpeg" alt="Government Book" />
           <h3>Government Book</h3>
           <p>Price: ₦950</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/litera.jpeg" alt="Literature in English Book" />
           <h3>Literature Book</h3>
           <p>Price: ₦950</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/mat.jpeg" alt="Mathematics Book" />
           <h3>Mathematics Book</h3>
           <p>Price: ₦1250</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
 
         <div class="book">
           <img src="./Resources/phys.jpeg" alt="Physics Book" />
           <h3>Physics Book</h3>
           <p>Price: ₦1250</p>
-          <button class="order-button">Buy Now</button>
+          <button
+            class="order-button"
+            onclick="window.location.href=`./order.html`"
+          >
+            Buy Now
+          </button>
         </div>
       </div>
     </section>

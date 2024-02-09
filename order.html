@@ -112,12 +112,13 @@
       }
     </style>
     <title>Order Prep50 Now!</title>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
       <header>
         <div>
-          <a class="red" href="#">
+          <a class="red" href="./index.html">
             Smash your JAMB with Prep50 Past Questions
           </a>
         </div>
@@ -125,7 +126,7 @@
           <a href="./products.html">Products</a>
           <button
             class="order-button"
-            onclick="window.location.href='./order.html'"
+            onclick="window.location.href=`https://prep50.ng`"
           >
             Take a Practice Exam
           </button>
@@ -135,7 +136,7 @@
 
     <section>
       <h2>Order <a href="" class="red">Prep50 </a>Now!</h2>
-      <form>
+      <form id="myForm">
         <div class="form">
           <label for="fullName">Full Name:</label>
           <input type="text" id="fullName" name="fullName" required />
@@ -222,7 +223,7 @@
           <div>
             <p>Any additional book to the bundle will cost ₦1,500 per book</p>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="order-button">Submit</button>
         </div>
       </form>
     </section>
