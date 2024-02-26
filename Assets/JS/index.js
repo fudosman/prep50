@@ -49,7 +49,7 @@ document.getElementById('myForm').addEventListener('submit', async function (eve
       // Redirect to index.html
       window.location.href = 'thankyou.html';
     } else {
-      console.error('Failed to submit form:', response.status);
+      console.error('Failed to submit form:', response);
     }
   } catch (error) {
     console.error('Error:', error);
