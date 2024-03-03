@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
   async function renderOrders(page) {
     const orders = await fetchOrders(page);
     orderTableBody.innerHTML = ''; // Clear previous orders
+    let rowIndex = (page - 1) * itemsPerPage + 1;
     orders.forEach(order => {
       const row = document.createElement('tr');
       row.innerHTML = `
+        <td>${rowIndex++}</td> 
         <td>${order.fullName}</td>
         <td>${order.email}</td>
         <td>${order.phoneNumber}</td>
