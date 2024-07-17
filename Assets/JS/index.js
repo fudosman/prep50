@@ -8,6 +8,14 @@ function showErrorToast(message) {
   }, 1500);
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  let select = document.getElementById('copies');
+  let options = select.options;
+
+  for (let i = 0; i < options.length; i++) {
+    options[i].style.fontWeight = 'bold';
+  }
+});
 
 
 document.getElementById('myForm').addEventListener('submit', async function (event) {
