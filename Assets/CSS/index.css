@@ -170,6 +170,19 @@ select {
   background-position-x: 95%;
 }
 
+.bundle {
+  font-size: larger;
+}
+
+.italicized-emphasis {
+  color: #ff6347;
+}
+
+.subject-emphasis {
+  color: #ff6347;
+  font-size: large;
+}
+
 button {
   background-color: #ff6347;
   color: #fafafa;

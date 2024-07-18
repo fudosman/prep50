@@ -5,11 +5,44 @@ body {
   background-color: #fafafa;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: justify;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.story {
+  font-style: italic;
+}
+
+.button,
+.order-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #e74c3c;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .thank-you-section {
-  max-width: 600px;
+  max-width: 800px;
   margin: 60px auto;
   padding: 5rem;
   padding-bottom: 6rem;
@@ -17,19 +50,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 2.5rem;
-  padding: 1rem 0;
-  color: #ff6347;
-}
-
 .red {
   color: #ff6347;
-}
-
-p {
-  font-size: 1.5rem;
-  padding: 0.5rem 0;
 }
 
 .upsell-link {
@@ -56,24 +78,16 @@ header a {
   text-transform: capitalize;
 }
 
-.order-button {
-  background-color: #ff6347;
-  color: #fafafa;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+.benefits,
+.steps {
+  margin: 20px 0;
 }
 
-button {
-  background-color: #ff6347;
-  color: #fafafa;
-  font-size: 1.2rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+.quote {
+  font-style: italic;
+  color: #7f8c8d;
 }
 
-/* Media Query for Tablets and Smaller Phones */
 @media (max-width: 768px) {
   .thank-you-section {
     padding: 2rem;
@@ -88,7 +102,8 @@ button {
     font-size: 1.2rem;
   }
 
-  .upsell-link {
-    font-size: 1.3rem;
+  .button,
+  .order-button {
+    font-size: 1rem;
   }
 }
